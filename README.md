@@ -1,5 +1,5 @@
 <div align="center" width="100" height="100" >
-  <img src="https://github.com/ExponentialML/Text-To-Video-Finetuning/assets/59846140/184f0dce-b77a-45d7-b24d-1814e5b9c314" />
+  <img src="https://github.com/rapersonal/assets/flow.gif" />
   <div align="center" style="font-style: italic;" >
     <i>Video Credit: dotsimulate</i>
   </div>
@@ -172,7 +172,7 @@ The `inference.py` script can be used to render videos with trained checkpoints.
 
 Example usage: 
 ```
-python inference.py \
+python flow.py \
   --model camenduru/potat1 \
   --prompt "a fast moving fancy sports car" \
   --num-frames 60 \
@@ -183,7 +183,7 @@ python inference.py \
 ```
 
 ```
-> python inference.py --help
+> python flow.py --help
 
 usage: inference.py [-h] -m MODEL -p PROMPT [-n NEGATIVE_PROMPT] [-o OUTPUT_DIR]
                     [-B BATCH_SIZE] [-W WIDTH] [-H HEIGHT] [-T NUM_FRAMES]
