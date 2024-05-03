@@ -6,14 +6,6 @@
 
 # Text-To-Video
 ## Text To Video model using Diffusers 🧨 
-
-Recommendation:@damo-vilab
-https://github.com/damo-vilab/i2vgen-xl
-
-https://github.com/rapersonal/creativeflow/blob/main/assets/flow.gif
-
-## Getting Started
-
 ### Requirements & Installation
 
 ```bash
