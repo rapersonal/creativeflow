@@ -41,7 +41,7 @@ python flow.py \
 ```
 > python flow.py --help
 
-usage: inference.py [-h] -m MODEL -p PROMPT [-n NEGATIVE_PROMPT] [-o OUTPUT_DIR]
+usage: flow.py [-h] -m MODEL -p PROMPT [-n NEGATIVE_PROMPT] [-o OUTPUT_DIR]
                     [-B BATCH_SIZE] [-W WIDTH] [-H HEIGHT] [-T NUM_FRAMES]
                     [-WS WINDOW_SIZE] [-VB VAE_BATCH_SIZE] [-s NUM_STEPS]
                     [-g GUIDANCE_SCALE] [-i INIT_VIDEO] [-iw INIT_WEIGHT] [-f FPS]
