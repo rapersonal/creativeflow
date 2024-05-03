@@ -4,8 +4,8 @@
 </div>
 
 
-# Text-To-Video
-## Text To Video model using Diffusers 🧨 
+# Text To Animation
+## Text To Animation using Diffusers 🧨 
 ### Requirements & Installation
 
 ```bash
