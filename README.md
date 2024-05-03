@@ -220,6 +220,4 @@ options:
 
 ## Citations
 [ModelScope Text-to-Video Technical Report](https://arxiv.org/abs/2308.06571):
-```bibtex
-
-```
+```bibtex```
