@@ -23,8 +23,7 @@ git lfs install
 git clone https://huggingface.co/damo-vilab/text-to-video-ms-1.7b ./models/model_scope_diffusers/
 ```
 
-## Other Models
-Alternatively, you can train starting from other models made by the community.
+## Alternatively Training Models
 
 | Contributer    |Model Name    | Link                                                |
 | -------------- | ------------ | --------------------------------------------------- | 
