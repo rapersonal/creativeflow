@@ -1,11 +1,6 @@
 <div align="center" width="100" height="100" >
   <img src="https://github.com/rapersonal/creativeflow/blob/main/assets/flow.gif" />
   <div align="center" style="font-style: italic;" >
-    <i>Video Credit: dotsimulate</i>
-  </div>
-  <div align="center" style="font-style: italic;" >
-    <i>Model: Zeroscope XL</i>
-  </div>
 </div>
 
 
