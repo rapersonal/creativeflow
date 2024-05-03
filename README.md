@@ -223,8 +223,8 @@ options:
 - [JCBrouwer](https://github.com/JCBrouwer) Inference implementations.
 - [sergiobr](https://github.com/sergiobr) Helpful ideas and bug fixes.
 
-## Citation
-original: [ModelScope Text-to-Video Technical Report](https://arxiv.org/abs/2308.06571):
+## Citations
+[ModelScope Text-to-Video Technical Report](https://arxiv.org/abs/2308.06571):
 ```bibtex
 
 ```
