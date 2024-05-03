@@ -1,5 +1,5 @@
 <div align="center" width="100" height="100" >
-  <img src="https://github.com/rapersonal/assets/flow.gif" />
+  <img src="https://github.com/rapersonal/creativeflow/blob/main/assets/flow.gif" />
   <div align="center" style="font-style: italic;" >
     <i>Video Credit: dotsimulate</i>
   </div>
@@ -9,30 +9,13 @@
 </div>
 
 
+# Text-To-Video
+## Text To Video model using Diffusers 🧨 
 
-# Text-To-Video-Finetuning
-## Finetune ModelScope's Text To Video model using Diffusers 🧨 
-
-## Important Update **2023-12-14**
-First of all a note from me. Thank you guys for your support, feedback, and journey through discovering the nascent, innate potential of video Diffusion Models.
-
-@damo-vilab Has released a repository for finetuning all things Video Diffusion Models, and I recommend their implementation over this repository.
+Recommendation:@damo-vilab
 https://github.com/damo-vilab/i2vgen-xl
 
-https://github.com/ExponentialML/Text-To-Video-Finetuning/assets/59846140/55608f6a-333a-458f-b7d5-94461c5da8bb
-
-This repository will no longer be updated, but will instead be archived for researchers & builders that wish to bootstrap their projects. 
-I will be leaving the issues, pull requests, and all related things for posterity purposes.
-
-Thanks again!
-
-### Updates
-- **2023-7-12**: You can now train a LoRA that is compatibile with the [webui extension](https://github.com/kabachuha/sd-webui-text2video)! See instructions [here.](https://github.com/ExponentialML/Text-To-Video-Finetuning#training-a-lora)
-- **2023-4-17**: You can now convert your trained models from diffusers to `.ckpt` format for A111 webui. Thanks @kabachuha!  
-- **2023-4-8**: LoRA Training released! Checkout `configs/v2/lora_training_config.yaml` for instructions. 
-- **2023-4-8**: Version 2 is released! 
-- **2023-3-29**: Added gradient checkpointing support. 
-- **2023-3-27**: Support for using Scaled Dot Product Attention for Torch 2.0 users. 
+https://github.com/rapersonal/creativeflow/blob/main/assets/flow.gif
 
 ## Getting Started
 
@@ -72,13 +55,6 @@ pip install -r requirements.txt
 ```
 
 ## Hardware
-
-All code was tested on Python 3.10.9 & Torch version 1.13.1 & 2.0.
-
-It is **highly recommended** to install >= Torch 2.0. This way, you don't have to install Xformers *or* worry about memory performance. 
-
-If you don't have Xformers enabled, you can follow the instructions here: https://github.com/facebookresearch/xformers
-
 Recommended to use a RTX 3090, but you should be able to train on GPUs with <= 16GB ram with:
 - Validation turned off.
 - Xformers or Torch 2.0 Scaled Dot-Product Attention 
@@ -108,17 +84,9 @@ The configuration uses a YAML config borrowed from [Tune-A-Video](https://github
 
 All configuration details are placed in `configs/v2/train_config.yaml`. Each parameter has a definition for what it does.
 
-### How would you recommend I proceed with making a config with my data?
+## Training
 
-I highly recommend (I did this myself) going to `configs/v2/train_config.yaml`. Then make a copy of it and name it whatever you wish `my_train.yaml`.
-
-Then, follow each line and configure it for your specific use case. 
-
-The instructions should be clear enough to get you up and running with your dataset, but feel free to ask any questions in the discussion board.
-
-## Training a LoRA
-
-***Please read this section carefully if you are training a LoRA model***
+***Please read this section carefully if you are training ***
 
 You can also train a LoRA that is compatible with the webui extension. 
 By default it's set to `'cloneofsimo'`, which was the first LoRA implementation for Stable Diffusion.
@@ -246,16 +214,6 @@ options:
                         Post-process the videos with LAMA to inpaint ModelScope's
                         common watermarks.
 ```
-
-## Developing
-
-Please feel free to open a pull request if you have a feature implementation or suggesstion! I welcome all contributions.
-
-I've tried to make the code fairly modular so you can hack away, see how the code works, and what the implementations do.
-
-## Deprecation
-If you want to use the V1 repository, you can use the branch [here](https://github.com/ExponentialML/Text-To-Video-Finetuning/tree/version/first-release).
-
 ## Shoutouts
 
 - [Showlab](https://github.com/showlab/Tune-A-Video) and bryandlee[https://github.com/bryandlee/Tune-A-Video] for their Tune-A-Video contribution that made this much easier.
@@ -266,12 +224,7 @@ If you want to use the V1 repository, you can use the branch [here](https://gith
 - [sergiobr](https://github.com/sergiobr) Helpful ideas and bug fixes.
 
 ## Citation
-If you find this work interesting, consider citing the original [ModelScope Text-to-Video Technical Report](https://arxiv.org/abs/2308.06571):
+original: [ModelScope Text-to-Video Technical Report](https://arxiv.org/abs/2308.06571):
 ```bibtex
-@article{ModelScopeT2V,
-  title={ModelScope Text-to-Video Technical Report},
-  author={Wang, Jiuniu and Yuan, Hangjie and Chen, Dayou and Zhang, Yingya and Wang, Xiang and Zhang, Shiwei},
-  journal={arXiv preprint arXiv:2308.06571},
-  year={2023}
-}
+
 ```
